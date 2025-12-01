@@ -39,8 +39,8 @@ if imagen_camara is not None:
     imagen_array = np.asarray(imagen)
     normalizada_imagen_array = (imagen_array.astype(np.float32) / 127.5) - 1
     # Crear un array para un lote de 1 imagen. ndarray = N-Dimensional Array
-    lote_imagenes = np.ndarray(shape=(1, 224, 224, 3), dtype=np.float32)
-    lote_imagenes[0] = normalizada_imagen_array
+lote_imagenes = np.ndarray(shape=(1, 224, 224, 3), dtype=np.float32)
+lote_imagenes[0] = normalizada_imagen_array
 
 # Predicción
 resultados= mi_modelo.predict(lote_imagenes)
