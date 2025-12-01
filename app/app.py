@@ -48,7 +48,7 @@ indice = np.argmax(resultados[0])
 etiqueta = nombre_clases[indice]
 probabilidad = resultados[0][indice]
 
-    st.divider() # Línea separadora visual
+st.divider() # Línea separadora visual
 
 if "dog" in etiqueta:
         st.success(f"¡Es un **PERRO**! 🐶")
