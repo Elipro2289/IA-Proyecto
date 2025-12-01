@@ -50,7 +50,7 @@ if imagen_camara is not None:
 
     st.divider() # Línea separadora visual
 
-if "Dog" in etiqueta:
+if "dog" in etiqueta:
         st.success(f"¡Es un **PERRO**! 🐶")
         st.balloons() # Efecto visual
 else:
