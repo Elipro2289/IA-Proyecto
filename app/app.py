@@ -19,7 +19,7 @@ def carga_modelo():
     # Cargamos el modelo
     modelo = keras.models.load_model("app/keras_model.h5", compile=False)
     # Carga las etiquetas de las clases
-    clases = open("st-app/labels.txt", "r").readlines()
+    clases = open("app/labels.txt", "r").readlines()
     return modelo, clases
 
 
